@@ -35,11 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .practice, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
+.practice .prac-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -258,6 +259,21 @@ section .title::after{
     background: none;
 }
 
+
+/*-------EDUCATION---------------*/
+
+.edu{
+    display: flex;
+    font-size: 25px;
+}
+.card1{
+    display: inline-block;
+    border: #333;
+}
+
+
+
+
 /* services section styling */
 .services, .teams{
     color:#fff;
@@ -308,6 +324,9 @@ section .title::after{
 .services .serv-content .card .box .coding_para{
     color: #fff;
 }
+
+
+
 /* skills section styling */
 
 .skills .title::after{
@@ -391,6 +410,55 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 40%;
 }
+
+/* practice section styling */
+.practice, .teams{
+    color:#fff;
+    background: #111;
+}
+.practice .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.practice .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i practice";
+}
+.practice .prac-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    justify-content: space-around;
+}
+.practice .prac-content .card:hover{
+    background: #03b1e1;
+}
+.practice .prac-content .card .box{
+    transition: all 0.3s ease;
+}
+.practice .prac-content .card:hover .box{
+    transform: scale(1.05);
+}
+.practice .prac-content .card i{
+    font-size: 50px;
+    color: #03b1e1;
+    transition: color 0.3s ease;
+}
+.practice .prac-content .card:hover i{
+    color: #fff;
+}
+.practice .prac-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #fff;
+}
+
 
 
 
@@ -591,6 +659,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .practice .prac-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -612,6 +684,9 @@ footer span a:hover{
         font-size: 20px;
     }
     .services .serv-content .card{
+        width: 100%;
+    }
+    .practice .prac-content .card{
         width: 100%;
     }
 }
