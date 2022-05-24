@@ -119,8 +119,9 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar .menu .menu-btn:hover{
     color: #03b1e1;
+    
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
@@ -269,7 +270,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "what i practice";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -301,8 +302,12 @@ section .title::after{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
+    color: #fff;
 }
 
+.services .serv-content .card .box .coding_para{
+    color: #fff;
+}
 /* skills section styling */
 
 .skills .title::after{
@@ -419,6 +424,18 @@ section .title::after{
     font-size: 25px;
     color: #03b1e1;
 }
+
+.contact .contact-content .row1 i{
+    font-size: 35px;
+    padding: 10px;
+}
+
+.contact .contact-content .row1 i:hover{
+    color: #03b1e1;
+}
+
+
+
 .contact .contact-content .info .head{
     font-weight: 500;
 }
