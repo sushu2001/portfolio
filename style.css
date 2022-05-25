@@ -11,6 +11,14 @@ html{
     scroll-behavior: smooth;
 }
 
+
+.sush_para{
+    font-family: 'Poppins'; 
+    font-weight: bold; 
+    font-size: 25px; 
+    color: #ffffff;
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -35,10 +43,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .practice, .skills, .teams, .contact, footer{
+.about, .edu, .services, .practice, .skills, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
+.edu .edu-content,
 .services .serv-content,
 .practice .prac-content,
 .skills .skills-content,
@@ -72,7 +81,7 @@ section .title::after{
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: #03b1e1;
+    color:#eaa221;
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -89,7 +98,7 @@ section .title::after{
 }
 .navbar.sticky{
     padding: 15px 0;
-    background: #03b1e1;
+    background:#eaa221;
 }
 .navbar .max-width{
     display: flex;
@@ -100,10 +109,12 @@ section .title::after{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
+    font-family: 'Brush Script MT';
 }
 .navbar .logo a span{
-    color: #03b1e1;
+    color:#eaa221;
     transition: all 0.3s ease;
+    font-family: 'Brush Script MT';
 }
 .navbar.sticky .logo a span{
     color: #fff;
@@ -121,7 +132,7 @@ section .title::after{
     transition: color 0.3s ease;
 }
 .navbar .menu .menu-btn:hover{
-    color: #03b1e1;
+    color:#eaa221;
     
 }
 .navbar.sticky .menu li a:hover{
@@ -139,7 +150,7 @@ section .title::after{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: #03b1e1;
+    background:#eaa221;
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -167,7 +178,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/bann.png") no-repeat center;
+    background: url("images/ben_.png") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -195,23 +206,23 @@ section .title::after{
     margin: 5px 0;
 }
 .home .home-content .text-2 .surname{
-    color: #03b1e1;
+    color:#eaa221;
     font-weight: 500;
 }
 .home .home-content a{
     display: inline-block;
-    background: #03b1e1;
+    background:#eaa221;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid #03b1e1;
+    border: 2px solid#eaa221;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
-    color: #03b1e1;
+    color:#eaa221;
     background: none;
 }
 
@@ -237,39 +248,77 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .right .text span{
-    color: #03b1e1;
+    color:#eaa221;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background: #03b1e1;
+    background:#eaa221;
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #03b1e1;
+    border: 2px solid#eaa221;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: #03b1e1;
+    color:#eaa221;
     background: none;
 }
 
 
 /*-------EDUCATION---------------*/
 
-.edu{
-    display: flex;
+.edu, .teams{
+    color:#fff;
+    background: #111;
+}
+.edu .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.edu .title::after,
+.teams .title::after{
+    background: #111;
+    content: "what i study";
+}
+.edu .edu-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.edu .edu-content .card:hover{
+    background:#eaa221;
+}
+.edu .edu-content .card .box{
+    transition: all 0.3s ease;
+}
+.edu .edu-content .card:hover .box{
+    transform: scale(1.05);
+}
+.edu .edu-content .card i{
+    font-size: 50px;
+    color:#eaa221;
+    transition: color 0.3s ease;
+}
+.edu .edu-content .card:hover i{
+    color: #fff;
+}
+.edu .edu-content .card .text{
     font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+    color: #fff;
 }
-.card1{
-    display: inline-block;
-    border: #333;
-}
+
 
 
 
@@ -298,7 +347,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .services .serv-content .card:hover{
-    background: #03b1e1;
+    background:#eaa221;
 }
 .services .serv-content .card .box{
     transition: all 0.3s ease;
@@ -308,7 +357,7 @@ section .title::after{
 }
 .services .serv-content .card i{
     font-size: 50px;
-    color: #03b1e1;
+    color:#eaa221;
     transition: color 0.3s ease;
 }
 .services .serv-content .card:hover i{
@@ -345,18 +394,18 @@ section .title::after{
 }
 .skills .skills-content .left a{
     display: inline-block;
-    background: #03b1e1;
+    background:#eaa221;
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #03b1e1;
+    border: 2px solid#eaa221;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
-    color: #03b1e1;
+    color:#eaa221;
     background: none;
 }
 .skills .skills-content .right .bars{
@@ -384,7 +433,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: #03b1e1;
+    background:#eaa221;
 }
 .skills-content .right .cpp::before{
     width: 70%;
@@ -423,7 +472,7 @@ section .title::after{
 .practice .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i practice";
+    content: "what i do";
 }
 .practice .prac-content .card{
     width: calc(33% - 20px);
@@ -436,7 +485,7 @@ section .title::after{
     justify-content: space-around;
 }
 .practice .prac-content .card:hover{
-    background: #03b1e1;
+    background:#eaa221;
 }
 .practice .prac-content .card .box{
     transition: all 0.3s ease;
@@ -446,7 +495,7 @@ section .title::after{
 }
 .practice .prac-content .card i{
     font-size: 50px;
-    color: #03b1e1;
+    color:#eaa221;
     transition: color 0.3s ease;
 }
 .practice .prac-content .card:hover i{
@@ -490,7 +539,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: #03b1e1;
+    color:#eaa221;
 }
 
 .contact .contact-content .row1 i{
@@ -499,7 +548,7 @@ section .title::after{
 }
 
 .contact .contact-content .row1 i:hover{
-    color: #03b1e1;
+    color:#eaa221;
 }
 
 
@@ -561,14 +610,15 @@ section .title::after{
   border-radius: 6px;
   cursor: pointer;
   flex-wrap: nowrap;
-  background: #03b1e1;
-  border: 2px solid #03b1e1;
+  background:#eaa221;
+  border: 2px solid#eaa221;
   transition: all 0.3s ease;
 }
 .right form .button-area button:hover{
-  color: #03b1e1;
+  color:#eaa221;
   background: none;
 }
+ 
 /* footer section styling */
 footer{
     background: #111;
@@ -577,7 +627,7 @@ footer{
     text-align: center;
 }
 footer span a{
-    color: #03b1e1;
+    color:#eaa221;
     text-decoration: none;
 }
 footer span a:hover{
@@ -655,6 +705,10 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
+    .edu .edu-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
     .services .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -682,6 +736,9 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
+    }
+    .edu .edu-content .card{
+        width: 100%;
     }
     .services .serv-content .card{
         width: 100%;
